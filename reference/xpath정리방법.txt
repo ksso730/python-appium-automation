@@ -1,0 +1,25 @@
+
+
+{
+	"app": "C:\\APPIUM\\apk\\toss.apk",
+	"platformName": "Android",
+	"platformVersion": "10",
+	"deviceName": "Galaxy 10",
+	"automationName": "Appium",
+	"appPackage": "viva.republica.toss",
+	"appActivity": "viva.republica.toss.splash.SplashActivity",
+	"udid": "192.168.25.185:5555",
+	"newCommandTimeout": 300,
+	"noReset": true
+}
+
+//xpath 정리방법
+
+XPath examples for this element:
+
+//android.widget.TextView[@text=‘Liviu Avram Test1’]
+
+//android.widget.TextView[contains(@resource-id,’nameTextView’) and @text=‘Liviu Avram Test1’]
+
+//android.widget.TextView[@text=‘Liviu Avram Test1’ and @enabled=‘true’]
+

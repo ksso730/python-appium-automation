@@ -1,0 +1,37 @@
+
+
+// 로봇 설치
+$ pip install robotframework
+
+$ robot --version
+Robot Framework 4.0.3 (Python 3.6.4 on win32)
+
+$ pip install robotframework-ride
+
+
+// pip install Appium-Python-Client
+
+
+
+
+// 라이브러리
+
+pip install pytest-runner
+
+(i) SeleniumLibrary: It is a testing library that enables the use of the Selenium tool. It is one of the commonly used external libraries. To install this Library use the below command at the command prompt.
+
+pip install robotframework-seleniumlibrary
+
+(ii) Appium Library: This is an Appium testing library for testing the Android and iOS applications. It, therefore, supports using the Robot Framework for automating mobile application testing. To install this Library, use the below command at the command prompt.
+
+pip install robotframework-appiumlibrary
+
+(iii) Database Library (Python): This is a python library that can be used for database testing. To install this Library use the below command at the command prompt
+
+pip install -U robotframework-databaselibrary
+
+(iv) Android Library: Keywords from this library are required for Android application testing. It uses Calabash Android to interact with the Android Application. To install this Library use the below command at the command prompt (Python >= 3.6 is needed to execute this command).
+
+pip install –upgrade robotframework-datadriver
+
+So far, we have discussed the various Standard and External Libraries, let’s take a look at how each of these libraries, installed on our system can be imported into a Project/Test suite.

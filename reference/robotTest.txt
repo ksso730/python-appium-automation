@@ -1,0 +1,27 @@
+*** Settings ***
+Library           AppiumLibrary
+Library           Collections
+
+*** Variables ***
+${APPIUM_SERVER}    http://127.0.0.1:4723/wd/hub
+${PLATFORM_NAME}    platformName=Android
+${PLATFORM_VERSION}    platformVersion=10
+${DEVICE_NAME}    deviceName=Galaxy 10
+${APP_PACKAGE}    appPackage=viva.republica.toss
+${APP_ACTIVITY}    appActivity=viva.republica.toss.splash.SplashActivity
+${UDID}           udid=192.168.25.185:5555
+${APP}            app=/APPIUM/apk/toss.apk
+${NO_RESET}       noReset=true
+${newCommandTimeout}    newCommandTimeout=300
+
+*** Test Cases ***
+tc1
+    Open Android
+
+*** Keywords ***
+Open Android
+    Open Application    ${APPIUM_SERVER}    ${PLATFORM_NAME}    ${PLATFORM_VERSION}    ${DEVICE_NAME}    ${UDID}    ${app}    ${APP_PACKAGE}    ${APP_ACTIVITY}
+    Sleep    10s
+
+Close Android
+    Close Application
